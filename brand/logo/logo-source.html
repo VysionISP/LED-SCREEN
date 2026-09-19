@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+  .stage {
+    display: inline-flex;
+    padding: 40px;
+    background: transparent;
+  }
+  .icon-only .stage { padding: 24px; }
+
+  .icon {
+    width: 160px;
+    height: 160px;
+    display: block;
+  }
+
+  .lockup {
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .lockup .icon {
+    width: 140px;
+    height: 140px;
+  }
+  .wordmark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wordmark .name {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+  .wordmark .name .accent {
+    color: #00D6FF;
+  }
+  .wordmark .tag {
+    margin-top: 10px;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #8B3CFF;
+    white-space: nowrap;
+  }
+
+  /* dark-on-transparent variant, for use on light backgrounds */
+  .on-light .name {
+    color: #0B0E14;
+  }
+  .on-light .name .accent {
+    color: #0091B3;
+  }
+  .on-light .tag {
+    color: #5B1FA8;
+  }
+</style>
+</head>
+<body>
+
+  <div id="lockup-dark" class="stage">
+    <div class="lockup">
+      <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pixelGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#00D6FF"/>
+            <stop offset="100%" stop-color="#8B3CFF"/>
+          </linearGradient>
+          <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="3.2" result="blur"/>
+          </filter>
+        </defs>
+        <rect x="8" y="8" width="84" height="84" rx="16" fill="none" stroke="url(#pixelGrad)" stroke-width="4"/>
+        <g filter="url(#glow)" opacity="0.85">
+          <rect x="24" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.35"/>
+          <rect x="24" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.35"/>
+          <rect x="24" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.35"/>
+          <rect x="38" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.55"/>
+          <rect x="38" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.55"/>
+          <rect x="38" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.55"/>
+          <rect x="52" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.8"/>
+          <rect x="52" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.8"/>
+          <rect x="52" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.8"/>
+          <rect x="66" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="1.0"/>
+          <rect x="66" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="1.0"/>
+          <rect x="66" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="1.0"/>
+        </g>
+        <g>
+          <rect x="24" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.35"/>
+          <rect x="24" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.35"/>
+          <rect x="24" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.35"/>
+          <rect x="38" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.55"/>
+          <rect x="38" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.55"/>
+          <rect x="38" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.55"/>
+          <rect x="52" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.8"/>
+          <rect x="52" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.8"/>
+          <rect x="52" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="0.8"/>
+          <rect x="66" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="1.0"/>
+          <rect x="66" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="1.0"/>
+          <rect x="66" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad)" opacity="1.0"/>
+        </g>
+      </svg>
+      <div class="wordmark">
+        <div class="name">Bright<span class="accent">Span</span></div>
+        <div class="tag">Displays</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lockup-light" class="stage on-light">
+    <div class="lockup">
+      <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pixelGrad2" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#00A8CC"/>
+            <stop offset="100%" stop-color="#7A2BE2"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="84" height="84" rx="16" fill="none" stroke="url(#pixelGrad2)" stroke-width="4"/>
+        <g>
+          <rect x="24" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.35"/>
+          <rect x="24" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.35"/>
+          <rect x="24" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.35"/>
+          <rect x="38" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.55"/>
+          <rect x="38" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.55"/>
+          <rect x="38" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.55"/>
+          <rect x="52" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.8"/>
+          <rect x="52" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.8"/>
+          <rect x="52" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="0.8"/>
+          <rect x="66" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="1.0"/>
+          <rect x="66" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="1.0"/>
+          <rect x="66" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad2)" opacity="1.0"/>
+        </g>
+      </svg>
+      <div class="wordmark">
+        <div class="name">Bright<span class="accent">Span</span></div>
+        <div class="tag">Displays</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="icon-only" class="stage icon-only">
+    <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="pixelGrad3" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#00D6FF"/>
+          <stop offset="100%" stop-color="#8B3CFF"/>
+        </linearGradient>
+        <filter id="glow3" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="3.2" result="blur"/>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="84" height="84" rx="16" fill="none" stroke="url(#pixelGrad3)" stroke-width="4"/>
+      <g filter="url(#glow3)" opacity="0.85">
+        <rect x="24" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.35"/>
+        <rect x="24" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.35"/>
+        <rect x="24" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.35"/>
+        <rect x="38" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.55"/>
+        <rect x="38" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.55"/>
+        <rect x="38" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.55"/>
+        <rect x="52" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.8"/>
+        <rect x="52" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.8"/>
+        <rect x="52" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.8"/>
+        <rect x="66" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="1.0"/>
+        <rect x="66" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="1.0"/>
+        <rect x="66" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="1.0"/>
+      </g>
+      <g>
+        <rect x="24" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.35"/>
+        <rect x="24" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.35"/>
+        <rect x="24" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.35"/>
+        <rect x="38" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.55"/>
+        <rect x="38" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.55"/>
+        <rect x="38" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.55"/>
+        <rect x="52" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.8"/>
+        <rect x="52" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.8"/>
+        <rect x="52" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="0.8"/>
+        <rect x="66" y="30" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="1.0"/>
+        <rect x="66" y="44" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="1.0"/>
+        <rect x="66" y="58" width="11" height="11" rx="2.5" fill="url(#pixelGrad3)" opacity="1.0"/>
+      </g>
+    </svg>
+  </div>
+
+</body>
+</html>

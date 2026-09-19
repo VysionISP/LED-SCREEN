@@ -89,8 +89,11 @@ Shopify admin (not theme code) and need to be created once per store:
    to "BrightSpan Displays". This is a Shopify account setting, not theme
    code — it's what the header falls back to when no logo image is
    uploaded, and what shows in browser tab titles and order emails.
-6. **Logo and favicon.** Theme editor → **Theme settings → Logo**. Until
-   you upload a logo image, the header shows the store name above as text.
+6. **Logo and favicon.** A ready-made logo lives in [`brand/logo`](brand/logo)
+   — upload `brand/logo/brightspan-logo-dark-bg.png` under **Theme editor →
+   Theme settings → Logo**, and `brand/logo/brightspan-icon-mark.png` under
+   **Favicon**. Until you upload one, the header shows the store name above
+   as text.
 7. **Footer contact email.** The footer's "Get in touch" block ships with
    a placeholder `sales@example.com` — update it in the theme editor
    (Footer section → Get in touch block).
