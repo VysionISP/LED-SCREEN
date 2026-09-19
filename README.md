@@ -1,4 +1,4 @@
-# Luminous — Shopify theme for LED display businesses
+# Luminous — Shopify theme for BrightSpan Displays
 
 A Shopify Online Store 2.0 theme for selling commercial LED screens: indoor
 and outdoor video walls, rental panels, controllers and accessories. Built on
@@ -85,10 +85,13 @@ Shopify admin (not theme code) and need to be created once per store:
    the theme editor on the product template.
 4. **Navigation.** Add "Request a Quote" (and your new collections) to
    your main menu under **Online Store → Navigation**.
-5. **Logo, favicon and socials.** Theme editor → **Theme settings → Logo**
-   and **Social media**. Until you upload a logo, the header falls back to
-   your store name as text.
-6. **Footer contact email.** The footer's "Get in touch" block ships with
+5. **Store name.** Set **Settings → General → Store details → Store name**
+   to "BrightSpan Displays". This is a Shopify account setting, not theme
+   code — it's what the header falls back to when no logo image is
+   uploaded, and what shows in browser tab titles and order emails.
+6. **Logo and favicon.** Theme editor → **Theme settings → Logo**. Until
+   you upload a logo image, the header shows the store name above as text.
+7. **Footer contact email.** The footer's "Get in touch" block ships with
    a placeholder `sales@example.com` — update it in the theme editor
    (Footer section → Get in touch block).
 
