@@ -97,11 +97,12 @@ Shopify admin (not theme code) and need to be created once per store:
    are in that same folder for use on white backgrounds elsewhere.
 7. **Hero image.** The homepage's top banner ships with no image (just the
    dark color scheme), so it currently shows Shopify's own placeholder
-   photo in the editor. [`brand/hero`](brand/hero) has a generated,
-   on-brand graphic (`hero-led-wall.jpg`) to use until you have real
-   product/installation photography — upload it under **Customize → Home
-   page → Image banner → Image**.
-8. **Footer contact email.** The footer's "Get in touch" block ships with
+   photo in the editor. [`brand/hero`](brand/hero) has `hero-penthouse.webp`
+   — upload it under **Customize → Home page → Image banner → Image**.
+8. **Installation gallery.** The "See BrightSpan in action" section (4
+   columns) also ships with no images. [`brand/photos`](brand/photos) has
+   one photo per column and says which goes where.
+9. **Footer contact email.** The footer's "Get in touch" block ships with
    a placeholder `sales@example.com` — update it in the theme editor
    (Footer section → Get in touch block).
 

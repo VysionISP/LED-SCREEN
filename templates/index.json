@@ -233,6 +233,69 @@
         "padding_bottom": 52
       }
     },
+    "installations": {
+      "type": "multicolumn",
+      "blocks": {
+        "sports": {
+          "type": "column",
+          "settings": {
+            "title": "Sports bars &amp; hospitality",
+            "text": "<p>Vertical panels and video walls built for a packed room.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "outdoor": {
+          "type": "column",
+          "settings": {
+            "title": "Outdoor plazas &amp; venues",
+            "text": "<p>Weatherproof displays rated for direct sun and rain.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "retail": {
+          "type": "column",
+          "settings": {
+            "title": "Retail &amp; showrooms",
+            "text": "<p>Slim freestanding displays that anchor a space.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "corporate": {
+          "type": "column",
+          "settings": {
+            "title": "Corporate &amp; VIP lounges",
+            "text": "<p>Premium finishes for boardrooms and hospitality suites.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "sports",
+        "outdoor",
+        "retail",
+        "corporate"
+      ],
+      "settings": {
+        "title": "See BrightSpan in action",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "quote_cta": {
       "type": "image-with-text",
       "blocks": {
@@ -352,6 +415,7 @@
     "specs",
     "categories",
     "featured_collection",
+    "installations",
     "quote_cta",
     "faq"
   ]
