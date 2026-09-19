@@ -105,81 +105,18 @@
         "padding_bottom": 28
       }
     },
-    "specs": {
-      "type": "multicolumn",
-      "blocks": {
-        "pitch": {
-          "type": "column",
-          "settings": {
-            "title": "P1.2 – P10 pixel pitch",
-            "text": "<p>Fine pitch for close-up viewing or wide pitch for large-format outdoor walls, matched to your exact viewing distance.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "brightness": {
-          "type": "column",
-          "settings": {
-            "title": "Up to 6,000 nits",
-            "text": "<p>Sunlight-readable brightness for outdoor billboards, with automatic dimming for comfortable indoor viewing.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "weatherproof": {
-          "type": "column",
-          "settings": {
-            "title": "IP65 weatherproof",
-            "text": "<p>Sealed cabinets rated for rain, dust and temperature swings on outdoor installations.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "custom": {
-          "type": "column",
-          "settings": {
-            "title": "Modular &amp; custom sizing",
-            "text": "<p>Flat, curved or floor-standing configurations built from standardized cabinets to fit any wall or budget.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "pitch",
-        "brightness",
-        "weatherproof",
-        "custom"
-      ],
-      "settings": {
-        "title": "Engineered for every environment",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured displays",
+        "products_to_show": 14,
+        "title": "LED DISPLAY POSTERS",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -379,7 +316,6 @@
   "order": [
     "hero",
     "trust",
-    "specs",
     "featured_collection",
     "installations",
     "quote_cta",
