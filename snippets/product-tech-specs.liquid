@@ -1,0 +1,39 @@
+{%- comment -%}
+  Renders a technical specification table for LED display products.
+  Reads optional product metafields under the "custom" namespace; rows
+  with no value are skipped automatically. See README.md for the full
+  list of metafield keys to set up under Settings > Custom data > Products.
+
+  Accepts:
+  - product: {Object} the current product
+  - block: {Object} the 'tech_specs' section block
+{%- endcomment -%}
+{%- liquid
+  assign spec_keys = 'pixel_pitch,resolution,brightness,refresh_rate,viewing_angle,ip_rating,power_consumption,cabinet_size,weight' | split: ','
+  assign spec_labels = 'Pixel pitch,Resolution,Brightness,Refresh rate,Viewing angle,IP rating,Power consumption,Cabinet size,Weight' | split: ','
+-%}
+{%- capture spec_rows -%}
+  {%- for key in spec_keys -%}
+    {%- assign spec_value = product.metafields.custom[key].value -%}
+    {%- if spec_value != blank -%}
+      <div class="tech-specs__row">
+        <dt>{{ spec_labels[forloop.index0] }}</dt>
+        <dd>{{ spec_value }}</dd>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if spec_rows != blank -%}
+  {{ 'component-tech-specs.css' | asset_url | stylesheet_tag }}
+  <div class="tech-specs quick-add-hidden" {{ block.shopify_attributes }}>
+    <h2 class="tech-specs__heading h4">
+      {{ block.settings.heading | default: 'products.product.tech_specs.heading' | t }}
+    </h2>
+    <dl class="tech-specs__grid">
+      {{ spec_rows }}
+    </dl>
+    {%- if block.settings.note != blank -%}
+      <div class="tech-specs__note caption rte">{{ block.settings.note }}</div>
+    {%- endif -%}
+  </div>
+{%- endif -%}
