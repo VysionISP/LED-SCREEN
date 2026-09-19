@@ -93,8 +93,15 @@ Shopify admin (not theme code) and need to be created once per store:
    — upload `brand/logo/brightspan-logo-dark-bg.png` under **Theme editor →
    Theme settings → Logo**, and `brand/logo/brightspan-icon-mark.png` under
    **Favicon**. Until you upload one, the header shows the store name above
-   as text.
-7. **Footer contact email.** The footer's "Get in touch" block ships with
+   as text. Two more logo variants (black text, and dark-navy/teal text)
+   are in that same folder for use on white backgrounds elsewhere.
+7. **Hero image.** The homepage's top banner ships with no image (just the
+   dark color scheme), so it currently shows Shopify's own placeholder
+   photo in the editor. [`brand/hero`](brand/hero) has a generated,
+   on-brand graphic (`hero-led-wall.jpg`) to use until you have real
+   product/installation photography — upload it under **Customize → Home
+   page → Image banner → Image**.
+8. **Footer contact email.** The footer's "Get in touch" block ships with
    a placeholder `sales@example.com` — update it in the theme editor
    (Footer section → Get in touch block).
 

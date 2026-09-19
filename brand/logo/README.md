@@ -8,6 +8,8 @@ color palette and Space Grotesk headings.
   else with a dark or black background.
 - `brightspan-logo-light-bg.png` — same lockup with dark navy/teal text,
   for white or light backgrounds (print, email signatures, partner decks).
+- `brightspan-logo-black.png` — same lockup with plain black text (icon
+  stays in color), a higher-contrast option for white backgrounds.
 - `brightspan-icon-mark.png` — icon only, square, for the favicon,
   social/app icons, or anywhere the full wordmark is too wide.
 - `logo-source.html` — editable source (plain HTML/SVG + Google Fonts).
