@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -35,16 +44,17 @@
         "buttons"
       ],
       "settings": {
+        "image": "shopify://shop_images/hero-penthouse.webp",
         "image_overlay_opacity": 50,
         "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
+        "color_scheme": "scheme-3",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false,
-        "color_scheme": "scheme-3"
+        "show_text_below": false
       }
     },
     "trust": {
@@ -208,20 +218,19 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "collection": "all",
+        "products_to_show": 8,
         "title": "Featured displays",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": true,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -229,6 +238,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 52,
         "padding_bottom": 52
       }
@@ -359,7 +369,8 @@
           "settings": {
             "heading": "What's the difference between indoor and outdoor displays?",
             "icon": "question_mark",
-            "row_content": "<p>Outdoor panels use higher-brightness, weatherproof (IP65) cabinets built to run in direct sunlight and rain. Indoor panels prioritize finer pixel pitch and seamless cabinets for close-up viewing.</p>"
+            "row_content": "<p>Outdoor panels use higher-brightness, weatherproof (IP65) cabinets built to run in direct sunlight and rain. Indoor panels prioritize finer pixel pitch and seamless cabinets for close-up viewing.</p>",
+            "page": ""
           }
         },
         "row-2": {
@@ -367,7 +378,8 @@
           "settings": {
             "heading": "What pixel pitch do I need?",
             "icon": "ruler",
-            "row_content": "<p>As a rough guide, divide your minimum viewing distance in metres by roughly one to get a workable pixel pitch in millimetres. Tell us about your space and we'll confirm the right spec.</p>"
+            "row_content": "<p>As a rough guide, divide your minimum viewing distance in metres by roughly one to get a workable pixel pitch in millimetres. Tell us about your space and we'll confirm the right spec.</p>",
+            "page": ""
           }
         },
         "row-3": {
@@ -375,7 +387,8 @@
           "settings": {
             "heading": "Do you handle installation?",
             "icon": "map_pin",
-            "row_content": "<p>Yes. Our team can survey your site, handle structural mounting, and commission the display and controller on-site, or support your own installer remotely.</p>"
+            "row_content": "<p>Yes. Our team can survey your site, handle structural mounting, and commission the display and controller on-site, or support your own installer remotely.</p>",
+            "page": ""
           }
         },
         "row-4": {
@@ -383,7 +396,8 @@
           "settings": {
             "heading": "What's the lead time on custom orders?",
             "icon": "stopwatch",
-            "row_content": "<p>Standard panel sizes typically ship within days. Fully custom configurations depend on size and volume — request a quote and we'll confirm a timeline.</p>"
+            "row_content": "<p>Standard panel sizes typically ship within days. Fully custom configurations depend on size and volume — request a quote and we'll confirm a timeline.</p>",
+            "page": ""
           }
         }
       },
