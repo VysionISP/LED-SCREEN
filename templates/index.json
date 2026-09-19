@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Commercial LED Displays, Built To Spec",
+            "heading": "Next-Generation LED Displays, Engineered To Spec",
             "heading_size": "hxl"
           }
         },
@@ -23,7 +23,7 @@
             "button_label_1": "Shop displays",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Request a quote",
+            "button_label_2": "Get a free quote",
             "button_link_2": "/pages/request-a-quote",
             "button_style_secondary_2": true
           }
@@ -45,6 +45,54 @@
         "mobile_content_alignment": "center",
         "show_text_below": false,
         "color_scheme": "scheme-3"
+      }
+    },
+    "trust": {
+      "type": "trust-bar",
+      "blocks": {
+        "install": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "heading": "Nationwide install",
+            "text": "Site survey through commissioning"
+          }
+        },
+        "warranty": {
+          "type": "item",
+          "settings": {
+            "icon": "padlock",
+            "heading": "Manufacturer warranty",
+            "text": "On every panel &amp; controller"
+          }
+        },
+        "turnaround": {
+          "type": "item",
+          "settings": {
+            "icon": "stopwatch",
+            "heading": "48-hour quote turnaround",
+            "text": "From spec to proposal"
+          }
+        },
+        "support": {
+          "type": "item",
+          "settings": {
+            "icon": "chat-bubble",
+            "heading": "Dedicated AV support",
+            "text": "Real engineers, not a ticket queue"
+          }
+        }
+      },
+      "block_order": [
+        "install",
+        "warranty",
+        "turnaround",
+        "support"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "specs": {
@@ -300,6 +348,7 @@
   },
   "order": [
     "hero",
+    "trust",
     "specs",
     "categories",
     "featured_collection",

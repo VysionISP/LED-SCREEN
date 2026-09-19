@@ -111,7 +111,7 @@
       {
         "type": "font_picker",
         "id": "type_header_font",
-        "default": "work_sans_n7",
+        "default": "space_grotesk_n7",
         "label": "t:settings_schema.typography.settings.type_header_font.label"
       },
       {
@@ -122,7 +122,7 @@
         "step": 5,
         "unit": "%",
         "label": "t:settings_schema.typography.settings.heading_scale.label",
-        "default": 110
+        "default": 115
       },
       {
         "type": "header",
@@ -225,7 +225,7 @@
             "label": "t:settings_schema.animations.settings.animations_hover_elements.options__3.label"
           }
         ],
-        "default": "default",
+        "default": "vertical-lift",
         "label": "t:settings_schema.animations.settings.animations_hover_elements.label",
         "info": "t:settings_schema.animations.settings.animations_hover_elements.info"
       }
@@ -280,7 +280,7 @@
         "step": 5,
         "unit": "%",
         "label": "t:settings_schema.global.settings.opacity.label",
-        "default": 0
+        "default": 40
       },
       {
         "type": "range",
@@ -310,7 +310,7 @@
         "step": 5,
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
-        "default": 0
+        "default": 20
       }
     ]
   },
