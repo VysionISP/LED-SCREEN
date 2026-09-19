@@ -18,8 +18,6 @@
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "cta_label": "Request a quote",
-        "cta_link": "/pages/request-a-quote",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-4",

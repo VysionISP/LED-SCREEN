@@ -12,17 +12,10 @@
     "hero": {
       "type": "image-banner",
       "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "By BrightSpan Displays · Commercial-Grade LED Technology",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Turn Any Wall Into<br>The <span style=\"color: #00D6FF\">Main Event</span>",
+            "heading": "Turn Any Wall Into The Main Event",
             "heading_size": "h0"
           }
         },
@@ -46,7 +39,6 @@
         }
       },
       "block_order": [
-        "eyebrow",
         "heading",
         "text",
         "buttons"
@@ -171,53 +163,6 @@
         "background_style": "primary",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
-    "categories": {
-      "type": "collection-list",
-      "blocks": {
-        "indoor": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "outdoor": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "rental": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "accessories": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "indoor",
-        "outdoor",
-        "rental",
-        "accessories"
-      ],
-      "settings": {
-        "title": "Shop by category",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 52,
         "padding_bottom": 52
@@ -435,7 +380,6 @@
     "hero",
     "trust",
     "specs",
-    "categories",
     "featured_collection",
     "installations",
     "quote_cta",
