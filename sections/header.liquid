@@ -122,6 +122,22 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .header__cta {
+    min-width: 0;
+    min-height: 0;
+    padding: 1.1rem 2rem;
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    display: none;
+  }
+
+  @media screen and (min-width: 990px) {
+    .header__cta {
+      display: inline-flex;
+    }
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -315,6 +331,12 @@
           </div>
         {%- endif -%}
       </a>
+
+      {%- if section.settings.cta_label != blank and section.settings.cta_link != blank -%}
+        <a href="{{ section.settings.cta_link }}" class="button button--small header__cta">
+          {{- section.settings.cta_label -}}
+        </a>
+      {%- endif -%}
     </div>
   </header>
 </{{ header_tag }}>
@@ -570,6 +592,23 @@
       ],
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "Request a quote",
+      "label": "Button label",
+      "info": "Shown at the far right of the header on desktop. Leave blank to hide."
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "default": "/pages/request-a-quote",
+      "label": "Button link"
     },
     {
       "type": "select",

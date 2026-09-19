@@ -12,10 +12,17 @@
     "hero": {
       "type": "image-banner",
       "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "By BrightSpan Displays · Commercial-Grade LED Technology",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Turn Any Wall Into The Main Event",
+            "heading": "Turn Any Wall Into<br>The <span style=\"color: #00D6FF\">Main Event</span>",
             "heading_size": "h0"
           }
         },
@@ -39,6 +46,7 @@
         }
       },
       "block_order": [
+        "eyebrow",
         "heading",
         "text",
         "buttons"
