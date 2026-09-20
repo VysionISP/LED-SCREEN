@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -22,7 +31,7 @@
           "type": "text",
           "settings": {
             "heading": "Get in touch",
-            "subtext": "<p>sales@example.com<br>Mon–Fri, 9am–5pm<br><a href=\"/pages/request-a-quote\">Request a quote</a></p>"
+            "subtext": "<p>sales@brightspan.com.au<br/>Mon–Fri, 9am–5pm<br/><a href=\"/pages/request-a-quote\">Request a quote</a></p>"
           }
         }
       },
@@ -33,17 +42,17 @@
       ],
       "settings": {
         "color_scheme": "scheme-4",
-        "newsletter_enable": true,
-        "newsletter_heading": "Get product drops, price lists & installer tips",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 28,
+        "padding_bottom": 20
       }
     }
   },
