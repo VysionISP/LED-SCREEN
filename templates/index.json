@@ -29,8 +29,8 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop displays",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "SHOP LED POSTERS",
+            "button_link_1": "shopify://collections/led-foldable-poster",
             "button_style_secondary_1": false,
             "button_label_2": "Get a free quote",
             "button_link_2": "/pages/request-a-quote",
