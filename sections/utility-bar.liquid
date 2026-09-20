@@ -1,0 +1,53 @@
+{{ 'component-utility-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width utility-bar">
+    <ul class="utility-bar__list list-unstyled" role="list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'link' and block.settings.label != blank -%}
+          <li class="utility-bar__item" {{ block.shopify_attributes }}>
+            {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" class="utility-bar__link link">{{ block.settings.label }}</a>
+            {%- else -%}
+              <span class="utility-bar__link">{{ block.settings.label }}</span>
+            {%- endif -%}
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Utility bar",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "default": "Link",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4
+}
+{% endschema %}

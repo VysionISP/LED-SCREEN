@@ -11,6 +11,48 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "utility-bar": {
+      "type": "utility-bar",
+      "blocks": {
+        "about": {
+          "type": "link",
+          "settings": {
+            "label": "About Us",
+            "link": "/pages/about-us"
+          }
+        },
+        "contact": {
+          "type": "link",
+          "settings": {
+            "label": "Contact Us",
+            "link": "/pages/contact"
+          }
+        },
+        "faq": {
+          "type": "link",
+          "settings": {
+            "label": "FAQs",
+            "link": ""
+          }
+        },
+        "quote": {
+          "type": "link",
+          "settings": {
+            "label": "Request a Quote",
+            "link": "/pages/request-a-quote"
+          }
+        }
+      },
+      "block_order": [
+        "about",
+        "contact",
+        "faq",
+        "quote"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2"
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -31,6 +73,7 @@
     }
   },
   "order": [
+    "utility-bar",
     "header"
   ]
 }
