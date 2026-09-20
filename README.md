@@ -91,7 +91,7 @@ Shopify admin (not theme code) and need to be created once per store:
    uploaded, and what shows in browser tab titles and order emails.
 6. **Logo and favicon.** A ready-made logo lives in [`brand/logo`](brand/logo)
    — upload `brand/logo/brightspan-logo-dark-bg.png` under **Theme editor →
-   Theme settings → Logo**, and `brand/logo/brightspan-icon-mark.png` under
+   Theme settings → Logo**, and `brand/logo/brightspan-favicon.png` under
    **Favicon**. Until you upload one, the header shows the store name above
    as text. Two more logo variants (black text, and dark-navy/teal text)
    are in that same folder for use on white backgrounds elsewhere.
