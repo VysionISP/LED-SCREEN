@@ -1,0 +1,97 @@
+.exploded-diagram__toggle {
+  margin: 0 auto 5rem;
+  min-width: 0;
+  min-height: 0;
+  padding: 1.3rem 2.8rem;
+}
+
+.exploded-diagram__toggle-label-assemble {
+  display: none;
+}
+
+exploded-diagram.is-exploded .exploded-diagram__toggle-label-explode {
+  display: none;
+}
+
+exploded-diagram.is-exploded .exploded-diagram__toggle-label-assemble {
+  display: inline;
+}
+
+.exploded-diagram__stack {
+  position: relative;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding-bottom: 28rem;
+}
+
+@media screen and (max-width: 749px) {
+  .exploded-diagram__stack {
+    padding-bottom: 34rem;
+  }
+}
+
+.exploded-diagram__layer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: -3.4rem;
+  transform: translateY(0) perspective(60rem) rotateX(55deg);
+  transform-origin: center;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exploded-diagram__layer:first-child {
+  margin-top: 0;
+}
+
+exploded-diagram.is-exploded .exploded-diagram__layer {
+  transform: translateY(calc(var(--layer-index) * 6.2rem)) perspective(60rem) rotateX(55deg);
+}
+
+.exploded-diagram__bar {
+  height: 3.4rem;
+  flex: 1 1 auto;
+  border-radius: 0.6rem;
+  background: var(--layer-color);
+  box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.45);
+}
+
+.exploded-diagram__layer--glow .exploded-diagram__bar {
+  box-shadow:
+    0 0 3.4rem 0.6rem var(--layer-color),
+    0 1rem 2.4rem rgba(0, 0, 0, 0.45);
+}
+
+.exploded-diagram__info {
+  flex: 0 0 auto;
+  width: 22rem;
+  opacity: 0;
+  transform: translateX(-0.8rem);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  pointer-events: none;
+}
+
+exploded-diagram.is-exploded .exploded-diagram__info {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+.exploded-diagram__label {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+}
+
+.exploded-diagram__description {
+  margin: 0;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+@media screen and (max-width: 749px) {
+  .exploded-diagram__info {
+    width: auto;
+  }
+}

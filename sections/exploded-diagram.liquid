@@ -1,0 +1,228 @@
+{{ 'component-exploded-diagram.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'exploded-diagram.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="{{ section.settings.heading_size }}" style="text-align: center;">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.intro != blank -%}
+      <div class="rte" style="text-align: center; max-width: 56rem; margin: 1.5rem auto 0;">
+        {{ section.settings.intro }}
+      </div>
+    {%- endif -%}
+
+    <exploded-diagram style="display: block; margin-top: 4rem;">
+      <button
+        type="button"
+        class="exploded-diagram__toggle button button--secondary"
+        aria-pressed="false"
+      >
+        <span class="exploded-diagram__toggle-label-explode">{{ section.settings.explode_label }}</span>
+        <span class="exploded-diagram__toggle-label-assemble">{{ section.settings.assemble_label }}</span>
+      </button>
+
+      <div class="exploded-diagram__stack">
+        {%- assign layer_index = -1 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'layer' -%}
+            {%- assign layer_index = layer_index | plus: 1 -%}
+            <div
+              class="exploded-diagram__layer{% if block.settings.glow %} exploded-diagram__layer--glow{% endif %}"
+              style="--layer-index: {{ layer_index }}; --layer-color: {{ block.settings.layer_color }};"
+              {{ block.shopify_attributes }}
+            >
+              <div class="exploded-diagram__bar"></div>
+              <div class="exploded-diagram__info">
+                {%- if block.settings.label != blank -%}
+                  <p class="exploded-diagram__label">{{ block.settings.label }}</p>
+                {%- endif -%}
+                {%- if block.settings.description != blank -%}
+                  <p class="exploded-diagram__description caption">{{ block.settings.description }}</p>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </exploded-diagram>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Exploded diagram",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "What's inside",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "default": "<p>Tap to explode the panel and see every layer, from the LED matrix to the driver board.</p>",
+      "label": "Intro text"
+    },
+    {
+      "type": "text",
+      "id": "explode_label",
+      "default": "Explode view",
+      "label": "Button label (assembled state)"
+    },
+    {
+      "type": "text",
+      "id": "assemble_label",
+      "default": "Assemble view",
+      "label": "Button label (exploded state)"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-4"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "layer",
+      "name": "Layer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "default": "Layer",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "layer_color",
+          "default": "#8A93A6",
+          "label": "Color"
+        },
+        {
+          "type": "checkbox",
+          "id": "glow",
+          "default": false,
+          "label": "Add glow effect",
+          "info": "Use for the LED layer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Exploded diagram",
+      "blocks": [
+        {
+          "type": "layer",
+          "settings": {
+            "label": "Tempered glass cover",
+            "description": "Anti-glare, impact-resistant front panel",
+            "layer_color": "#D7DEE8",
+            "glow": false
+          }
+        },
+        {
+          "type": "layer",
+          "settings": {
+            "label": "LED matrix",
+            "description": "High-density SMD LEDs, individually addressable",
+            "layer_color": "#00D6FF",
+            "glow": true
+          }
+        },
+        {
+          "type": "layer",
+          "settings": {
+            "label": "Diffusion layer",
+            "description": "Even light spread, eliminates hotspots",
+            "layer_color": "#F4F6FA",
+            "glow": false
+          }
+        },
+        {
+          "type": "layer",
+          "settings": {
+            "label": "Driver board",
+            "description": "Onboard processing, Wi-Fi &amp; app control",
+            "layer_color": "#2FA968",
+            "glow": false
+          }
+        },
+        {
+          "type": "layer",
+          "settings": {
+            "label": "Aluminum housing",
+            "description": "Lightweight, heat-dissipating frame",
+            "layer_color": "#8A93A6",
+            "glow": false
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

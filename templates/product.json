@@ -75,6 +75,73 @@
         "padding_bottom": 12
       }
     },
+    "exploded_diagram": {
+      "type": "exploded-diagram",
+      "blocks": {
+        "glass": {
+          "type": "layer",
+          "settings": {
+            "label": "Tempered glass cover",
+            "description": "Anti-glare, impact-resistant front panel",
+            "layer_color": "#D7DEE8",
+            "glow": false
+          }
+        },
+        "led": {
+          "type": "layer",
+          "settings": {
+            "label": "LED matrix",
+            "description": "High-density SMD LEDs, individually addressable",
+            "layer_color": "#00D6FF",
+            "glow": true
+          }
+        },
+        "diffusion": {
+          "type": "layer",
+          "settings": {
+            "label": "Diffusion layer",
+            "description": "Even light spread, eliminates hotspots",
+            "layer_color": "#F4F6FA",
+            "glow": false
+          }
+        },
+        "driver": {
+          "type": "layer",
+          "settings": {
+            "label": "Driver board",
+            "description": "Onboard processing, Wi-Fi &amp; app control",
+            "layer_color": "#2FA968",
+            "glow": false
+          }
+        },
+        "housing": {
+          "type": "layer",
+          "settings": {
+            "label": "Aluminum housing",
+            "description": "Lightweight, heat-dissipating frame",
+            "layer_color": "#8A93A6",
+            "glow": false
+          }
+        }
+      },
+      "block_order": [
+        "glass",
+        "led",
+        "diffusion",
+        "driver",
+        "housing"
+      ],
+      "settings": {
+        "heading": "What's inside",
+        "heading_size": "h1",
+        "intro": "<p>Tap to explode the panel and see every layer, from the LED matrix to the driver board.</p>",
+        "explode_label": "Explode view",
+        "assemble_label": "Assemble view",
+        "color_scheme": "scheme-4",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "disclosures": {
       "type": "disclosures",
       "settings": {
@@ -107,6 +174,7 @@
   },
   "order": [
     "main",
+    "exploded_diagram",
     "disclosures",
     "related-products"
   ]
