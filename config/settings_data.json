@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/brightspan-logo-dark-bg.png",
-    "logo_width": 180,
+    "logo": "shopify://shop_images/brightspan-logo-light-bg.png",
+    "logo_width": 220,
     "favicon": "shopify://shop_images/brightspan-favicon.png",
     "type_header_font": "space_grotesk_n7",
     "heading_scale": 115,
