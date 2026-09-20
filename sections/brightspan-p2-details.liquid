@@ -1,5 +1,5 @@
 {% comment %}
-BrightSpan P2 product section — v3, with freight images and size links. Paste this WHOLE file into a Custom liquid SECTION below Product information (not into the product description).
+BrightSpan P2 native Shopify section. Save this WHOLE file as sections/brightspan-p2-details.liquid, then add BrightSpan P2 details through the product template editor. Use the section image pickers to choose your images.
 Upload brightspan-p2-assembled.png and brightspan-p2-exploded.png to the product media. The assembled image is found by filename or alt text containing 'matching assembled view'; the exploded image is found by filename or alt text containing 'exploded'.
 Custom liquid: fill bs_exploded_url_override with the uploaded exploded image's Shopify URL if filename discovery does not find it. The 2–8 screen links default to /products/pulse-led-poster-p2-N-wide. Section link settings can override these defaults. Button labels say View N Screen Display. Each width uses the product URL pattern supplied by the store owner.
 This section only renders on product handle pulse-led-poster-p2. Change the handle below if needed.
@@ -106,7 +106,7 @@ This section only renders on product handle pulse-led-poster-p2. Change the hand
   <div class="bs-join"><div><p class="bs-eyebrow">Made to grow</p><h3>One poster.<br>More possibilities.</h3><p>Use one on its own or join matching screens into a larger display. Every unit supports joining, whether bought individually or in a discounted set.</p><div class="bs-join-buttons" role="group" aria-label="Preview number of joined screens"><button type="button" data-bs-count="1" data-bs-url="{{ bs_link_1 | escape }}" aria-pressed="true">1</button><button type="button" data-bs-count="2" data-bs-url="{{ bs_link_2 | escape }}" aria-pressed="false">2</button><button type="button" data-bs-count="3" data-bs-url="{{ bs_link_3 | escape }}" aria-pressed="false">3</button><button type="button" data-bs-count="4" data-bs-url="{{ bs_link_4 | escape }}" aria-pressed="false">4</button><button type="button" data-bs-count="5" data-bs-url="{{ bs_link_5 | escape }}" aria-pressed="false">5</button><button type="button" data-bs-count="6" data-bs-url="{{ bs_link_6 | escape }}" aria-pressed="false">6</button><button type="button" data-bs-count="7" data-bs-url="{{ bs_link_7 | escape }}" aria-pressed="false">7</button><button type="button" data-bs-count="8" data-bs-url="{{ bs_link_8 | escape }}" aria-pressed="false">8</button></div><div class="bs-dim" data-bs-dim aria-live="polite">1 screen · 640 × 1,920 mm display area<br>320 × 960 pixels</div><a class="bs-view-product" data-bs-product-link href="{{ bs_link_1 | escape }}">View 1 Screen Display →</a></div><div><div class="bs-wall-stage"><div class="bs-wall" data-bs-wall aria-hidden="true"><span></span><b class="bs-wall-word">P2</b></div></div><p class="bs-wall-note">Layout illustration. Width shown is the active display area.</p></div></div>
 
   <div class="bs-shipping"><p class="bs-eyebrow">How it’s shipped</p><h3>Packed for the journey.</h3><p>Your poster travels in a protective wheeled freight case. Internal foam supports and securing straps help keep the folded display and packed components in place during transport.</p><div class="bs-case-grid"><figure><button type="button" class="bs-zoom" aria-label="Enlarge closed freight case"><img src="{{ bs_case_closed_url | escape }}" alt="Closed protective freight case with metal edging, recessed handles and caster wheels" width="990" height="1237" loading="lazy"></button><figcaption>Closed freight case · ready for transport</figcaption></figure><figure><button type="button" class="bs-zoom" aria-label="Enlarge open freight case"><img src="{{ bs_case_open_url | escape }}" alt="Open freight case showing foam supports, securing strap and packed components" width="990" height="1237" loading="lazy"></button><figcaption>Inside the case · supported and secured</figcaption></figure></div></div>
-  <dialog class="bs-lightbox" aria-label="Enlarged product image"><button type="button" class="bs-lightbox-close">Close ×</button><img data-bs-zoom-image alt=""><p class="bs-lightbox-caption" data-bs-zoom-caption></p></dialog>
+  <dialog class="bs-lightbox" aria-label="Enlarged product image"><button type="button" class="bs-lightbox-close">Close ×</button><img data-bs-zoom-image alt="" width="1536" height="1024"><p class="bs-lightbox-caption" data-bs-zoom-caption></p></dialog>
   <details class="bs-details"><summary>Full technical specifications</summary><table aria-label="P2 technical specifications"><tbody>
     <tr><th scope="row">Pixel pitch</th><td>2.0 mm</td></tr><tr><th scope="row">Display area</th><td>640 W × 1,920 H mm</td></tr><tr><th scope="row">Native resolution</th><td>320 × 960 pixels per unit</td></tr><tr><th scope="row">Overall dimensions</th><td>664 W × 2,075 H × 440 D mm</td></tr><tr><th scope="row">LED surface</th><td>GOB protective technology</td></tr><tr><th scope="row">Controller</th><td>NovaStar TB40</td></tr><tr><th scope="row">Processor / RAM</th><td>Quad-core ARM A55 at 1.8 GHz / 1 GB RAM</td></tr><tr><th scope="row">Storage</th><td>Built-in media storage; capacity depends on controller revision</td></tr><tr><th scope="row">TB40 video connections</th><td>HDMI 1.3 input and HDMI loop output</td></tr><tr><th scope="row">Content management</th><td>Mobile phone, tablet, computer and USB</td></tr><tr><th scope="row">Network</th><td>Wi-Fi and wired Ethernet</td></tr><tr><th scope="row">Cloud</th><td>Remote publishing and monitoring through a compatible service; internet connection required</td></tr><tr><th scope="row">Design / use</th><td>Foldable LED poster for indoor use</td></tr><tr><th scope="row">Joining</th><td>Matching screens can be joined with the appropriate connection and control configuration</td></tr>
   </tbody></table></details>
@@ -138,8 +138,8 @@ This section only renders on product handle pulse-led-poster-p2. Change the hand
     root.querySelectorAll('[data-bs-count]').forEach(b=>b.addEventListener('click',()=>setCount(Number(b.dataset.bsCount))));setCount(1);
     let resize;if('ResizeObserver'in window){resize=new ResizeObserver(()=>setCount(Number(root.dataset.count||1)));resize.observe(wall.parentElement);}
     const lightbox=root.querySelector('.bs-lightbox');const zoomImage=root.querySelector('[data-bs-zoom-image]');const zoomCaption=root.querySelector('[data-bs-zoom-caption]');
-    root.querySelectorAll('.bs-zoom').forEach(button=>button.addEventListener('click',()=>{const photo=button.querySelector('img');if(!photo||!photo.complete||!photo.naturalWidth)return;zoomImage.src=photo.currentSrc||photo.src;zoomImage.alt=photo.alt;zoomCaption.textContent=photo.alt;if(typeof lightbox.showModal==='function')lightbox.showModal();}));
-    root.querySelector('[data-bs-enlarge]')?.addEventListener('click',()=>{if(!fullExploded||!fullExploded.complete||!fullExploded.naturalWidth)return;zoomImage.src=fullExploded.currentSrc||fullExploded.src;zoomImage.alt='Illustrative exploded view of the BrightSpan LED poster';zoomCaption.textContent='Illustrative internal view. Component layout may vary.';if(typeof lightbox.showModal==='function')lightbox.showModal();});
+    root.querySelectorAll('.bs-zoom').forEach(button=>button.addEventListener('click',()=>{const photo=button.querySelector('img');if(!photo||!photo.complete||!photo.naturalWidth)return;zoomImage.width=photo.naturalWidth;zoomImage.height=photo.naturalHeight;zoomImage.src=photo.currentSrc||photo.src;zoomImage.alt=photo.alt;zoomCaption.textContent=photo.alt;if(typeof lightbox.showModal==='function')lightbox.showModal();}));
+    root.querySelector('[data-bs-enlarge]')?.addEventListener('click',()=>{if(!fullExploded||!fullExploded.complete||!fullExploded.naturalWidth)return;zoomImage.width=fullExploded.naturalWidth;zoomImage.height=fullExploded.naturalHeight;zoomImage.src=fullExploded.currentSrc||fullExploded.src;zoomImage.alt='Illustrative exploded view of the BrightSpan LED poster';zoomCaption.textContent='Illustrative internal view. Component layout may vary.';if(typeof lightbox.showModal==='function')lightbox.showModal();});
     lightbox.querySelector('.bs-lightbox-close').addEventListener('click',()=>lightbox.close());
     lightbox.addEventListener('click',event=>{if(event.target===lightbox){const box=lightbox.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)lightbox.close();}});
     root.__bsCleanup=()=>{clear();observer?.disconnect();resize?.disconnect();};
@@ -152,3 +152,87 @@ This section only renders on product handle pulse-led-poster-p2. Change the hand
 </script>
 
 {% endif %}
+
+{% schema %}
+{
+  "name": "BrightSpan P2 details",
+  "tag": "section",
+  "class": "brightspan-product-details",
+  "enabled_on": {
+    "templates": [
+      "product"
+    ]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "P2 product page. Choose the matching assembled and exploded images. Product links default to /products/pulse-led-poster-p2-N-wide. Override any link if needed."
+    },
+    {
+      "type": "image_picker",
+      "id": "assembled_image",
+      "label": "Assembled image"
+    },
+    {
+      "type": "image_picker",
+      "id": "exploded_image",
+      "label": "Exploded image"
+    },
+    {
+      "type": "image_picker",
+      "id": "case_closed_image",
+      "label": "Freight case \u2014 closed"
+    },
+    {
+      "type": "image_picker",
+      "id": "case_open_image",
+      "label": "Freight case \u2014 open"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "1-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "2-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_3",
+      "label": "3-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_4",
+      "label": "4-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_5",
+      "label": "5-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_6",
+      "label": "6-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_7",
+      "label": "7-screen product link"
+    },
+    {
+      "type": "url",
+      "id": "link_8",
+      "label": "8-screen product link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BrightSpan P2 details"
+    }
+  ]
+}
+{% endschema %}
