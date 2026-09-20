@@ -135,6 +135,7 @@
     },
     "featured_collection_RFfzzg": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "led-foldable-poster-set",
         "products_to_show": 14,
