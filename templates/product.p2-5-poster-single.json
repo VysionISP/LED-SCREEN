@@ -75,86 +75,9 @@
         "padding_bottom": 12
       }
     },
-    "exploded_diagram": {
-      "type": "exploded-diagram",
-      "blocks": {
-        "glass": {
-          "type": "layer",
-          "settings": {
-            "label": "Tempered glass cover",
-            "description": "Anti-glare, impact-resistant front panel",
-            "layer_color": "#D7DEE8",
-            "glow": false
-          }
-        },
-        "led": {
-          "type": "layer",
-          "settings": {
-            "label": "LED matrix",
-            "description": "High-density SMD LEDs, individually addressable",
-            "layer_color": "#00D6FF",
-            "glow": true
-          }
-        },
-        "diffusion": {
-          "type": "layer",
-          "settings": {
-            "label": "Diffusion layer",
-            "description": "Even light spread, eliminates hotspots",
-            "layer_color": "#F4F6FA",
-            "glow": false
-          }
-        },
-        "driver": {
-          "type": "layer",
-          "settings": {
-            "label": "Driver board",
-            "description": "Onboard processing, Wi-Fi &amp; app control",
-            "layer_color": "#2FA968",
-            "glow": false
-          }
-        },
-        "housing": {
-          "type": "layer",
-          "settings": {
-            "label": "Aluminum housing",
-            "description": "Lightweight, heat-dissipating frame",
-            "layer_color": "#8A93A6",
-            "glow": false
-          }
-        }
-      },
-      "block_order": [
-        "glass",
-        "led",
-        "diffusion",
-        "driver",
-        "housing"
-      ],
-      "settings": {
-        "heading": "What's inside",
-        "heading_size": "h1",
-        "intro": "<p>Tap to explode the panel and see every layer, from the LED matrix to the driver board.</p>",
-        "explode_label": "Explode view",
-        "assemble_label": "Assemble view",
-        "color_scheme": "scheme-4",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "disclosures": {
-      "type": "disclosures",
-      "settings": {
-        "heading": "Disclosures",
-        "heading_size": "h2",
-        "open_by_default": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -170,12 +93,39 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_B6AbPp": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "brightspan_p2_details_hJNMwi": {
+      "type": "brightspan-p2-details",
+      "name": "BrightSpan P2 details",
+      "settings": {
+        "assembled_image": "shopify://shop_images/brightspan-p2-assembled.png",
+        "exploded_image": "shopify://shop_images/brightspan-p2-exploded.png",
+        "case_closed_image": "shopify://shop_images/brightspan-freight-case-closed.webp",
+        "link_1": "",
+        "link_2": "",
+        "link_3": "/products/pulse-led-poster-p2-3-wide",
+        "link_4": "",
+        "link_5": "",
+        "link_6": "",
+        "link_7": "/products/pulse-led-poster-7-wide",
+        "link_8": ""
+      }
     }
   },
   "order": [
     "main",
-    "exploded_diagram",
-    "disclosures",
-    "related-products"
+    "related-products",
+    "custom_liquid_B6AbPp",
+    "brightspan_p2_details_hJNMwi"
   ]
 }
