@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "tech_specs": {
+          "type": "tech_specs",
+          "settings": {
+            "heading": "Tech specs",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "tech_specs"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "exploded_diagram": {
+      "type": "exploded-diagram",
+      "blocks": {
+        "glass": {
+          "type": "layer",
+          "settings": {
+            "label": "Tempered glass cover",
+            "description": "Anti-glare, impact-resistant front panel",
+            "layer_color": "#D7DEE8",
+            "glow": false
+          }
+        },
+        "led": {
+          "type": "layer",
+          "settings": {
+            "label": "LED matrix",
+            "description": "High-density SMD LEDs, individually addressable",
+            "layer_color": "#00D6FF",
+            "glow": true
+          }
+        },
+        "diffusion": {
+          "type": "layer",
+          "settings": {
+            "label": "Diffusion layer",
+            "description": "Even light spread, eliminates hotspots",
+            "layer_color": "#F4F6FA",
+            "glow": false
+          }
+        },
+        "driver": {
+          "type": "layer",
+          "settings": {
+            "label": "Driver board",
+            "description": "Onboard processing, Wi-Fi &amp; app control",
+            "layer_color": "#2FA968",
+            "glow": false
+          }
+        },
+        "housing": {
+          "type": "layer",
+          "settings": {
+            "label": "Aluminum housing",
+            "description": "Lightweight, heat-dissipating frame",
+            "layer_color": "#8A93A6",
+            "glow": false
+          }
+        }
+      },
+      "block_order": [
+        "glass",
+        "led",
+        "diffusion",
+        "driver",
+        "housing"
+      ],
+      "settings": {
+        "heading": "What's inside",
+        "heading_size": "h1",
+        "intro": "<p>Tap to explode the panel and see every layer, from the LED matrix to the driver board.</p>",
+        "explode_label": "Explode view",
+        "assemble_label": "Assemble view",
+        "color_scheme": "scheme-4",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "disclosures": {
+      "type": "disclosures",
+      "settings": {
+        "heading": "Disclosures",
+        "heading_size": "h2",
+        "open_by_default": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "exploded_diagram",
+    "disclosures",
+    "related-products"
+  ]
+}
