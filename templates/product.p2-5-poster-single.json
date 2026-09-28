@@ -106,10 +106,10 @@
     },
     "brightspan_p2_details_hJNMwi": {
       "type": "brightspan-p2-details",
-      "name": "BrightSpan P2 details",
+      "name": "BrightSpan P2 .5details",
       "settings": {
-        "assembled_image": "shopify://shop_images/brightspan-p2-assembled.png",
-        "exploded_image": "shopify://shop_images/brightspan-p2-exploded.png",
+        "assembled_image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_06_24_53_PM.png",
+        "exploded_image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_06_24_59_PM.png",
         "case_closed_image": "shopify://shop_images/brightspan-freight-case-closed.webp",
         "link_1": "",
         "link_2": "",
