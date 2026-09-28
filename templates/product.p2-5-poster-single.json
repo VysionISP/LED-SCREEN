@@ -120,12 +120,40 @@
         "link_7": "/products/pulse-led-poster-7-wide",
         "link_8": ""
       }
+    },
+    "brightspan_poster_details_8XqJpw": {
+      "type": "brightspan-poster-details",
+      "name": "BrightSpan Poster Details",
+      "settings": {
+        "poster_model": "auto",
+        "initial_count": "0",
+        "show_freight": true,
+        "display_width": 640,
+        "display_height": 1920,
+        "overall_width": 664,
+        "overall_height": 2075,
+        "overall_depth": 440,
+        "pixel_width_p186": 0,
+        "pixel_height_p186": 0,
+        "pixel_width_p153": 0,
+        "pixel_height_p153": 0,
+        "base_product": "",
+        "link_1": "",
+        "link_2": "",
+        "link_3": "",
+        "link_4": "",
+        "link_5": "",
+        "link_6": "",
+        "link_7": "",
+        "link_8": ""
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "custom_liquid_B6AbPp",
-    "brightspan_p2_details_hJNMwi"
+    "brightspan_p2_details_hJNMwi",
+    "brightspan_poster_details_8XqJpw"
   ]
 }
